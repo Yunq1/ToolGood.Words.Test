@@ -50,16 +50,6 @@ ToolGood.Words:                 本项目源代码
     var str = iwords.Replace(test, '*');
     Assert.AreEqual("我是***", str);
 ``` 
-
-### 敏感词词库位置
-本项目提供了示例敏感词词库，位于以下位置：
-* **Java版本**：`java/sensi_words.txt` - 敏感词列表文件
-* **C#版本**：
-  * `csharp/ToolGood.Words.Test/_Illegal/IllegalKeywords.txt` - 敏感关键词列表
-  * `csharp/ToolGood.Words.Test/_Illegal/IllegalUrls.txt` - 敏感网址列表
-
-使用时，可以读取这些文件内容，然后通过 `SetKeywords` 方法加载到检测类中。
-
 ## 非法词(敏感词)检测（字符串搜索）（支持通配符）
 非法词(敏感词)检测类：`StringMatch`、`StringMatchEx`、`WordsMatch`、`WordsMatchEx`。
 
